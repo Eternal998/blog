@@ -2,7 +2,9 @@
 # Build the bundle first: pnpm build (see README-DEPLOY.md).
 # node:24-slim (glibc) matches the platform the bundle was built on,
 # so sharp's prebuilt binaries load without recompilation.
-FROM node:24-slim
+# Base image pulled via DaoCloud mirror (Docker Hub is unreachable from CN;
+# fnOS's own mirror proxy returns 401). Fallback: docker.1panel.live/library/node:24-slim
+FROM docker.m.daocloud.io/library/node:24-slim
 
 WORKDIR /app
 

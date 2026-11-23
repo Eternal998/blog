@@ -11,8 +11,8 @@
 ## 起步
 
 ```bash
-git clone https://github.com/Eternal998/gitlib.git
-cd gitlib
+git clone https://github.com/Eternal998/blog.git
+cd blog
 pnpm install
 cp .env.example .env.local
 pnpm dev

@@ -11,7 +11,7 @@ export const SOCIAL = {
   github: {
     title: "GitHub",
     handle: "Eternal998",
-    href: "https://github.com/Eternal998/gitlib",
+    href: "https://github.com/Eternal998/blog",
     sameAs: true,
   },
 } satisfies Record<string, SocialProfile>
