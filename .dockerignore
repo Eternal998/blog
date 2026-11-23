@@ -1,0 +1,11 @@
+.git
+.husky
+node_modules
+.next/*
+!.next/standalone
+!.next/static
+src
+scripts
+*.md
+.eslintcache
+.pnpm-store

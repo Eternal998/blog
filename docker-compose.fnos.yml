@@ -1,0 +1,14 @@
+# 飞牛 NAS 专用：项目可建在任意位置，构建上下文用绝对路径指向源码目录。
+# 路径中的空格是真实目录名，引号不可去掉。
+services:
+  eternal:
+    build:
+      context: "/vol1/@appshare/Harness/workspace /eternal-portfolio"
+      dockerfile: Dockerfile
+    image: eternal-portfolio:latest
+    container_name: eternal
+    restart: unless-stopped
+    ports:
+      - "9999:3000"
+    environment:
+      - TZ=Asia/Shanghai
